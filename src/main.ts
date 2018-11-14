@@ -4,11 +4,13 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 import './registerServiceWorker';
-import Vuetify from 'vuetify/lib';
 import 'vuetify/src/stylus/app.styl';
 
+// Plugins
+import './plugins/vuetify';
+import './plugins/vee-validate';
+
 Vue.config.productionTip = false;
-Vue.use(Vuetify);
 
 new Vue({
   router,
